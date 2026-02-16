@@ -28,7 +28,7 @@ function App() {
       .catch(console.error);
   }, []);
 
-  //新規追加
+  // 新規追加
   const handleCreate = async (newData: Omit<Transaction, "id">) => {
     const res = await fetch("http://localhost:3001/transactions", {
       method: "POST",
